@@ -6,40 +6,37 @@
     android:background="@color/white"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="@dimen/button_margin">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center_vertical">
+        android:gravity="center_vertical"
+        android:layout_marginBottom="28dp">
 
         <Button
             android:id="@+id/light_mode"
-            android:layout_width="48dp"
+            android:layout_width="@dimen/button_width"
             android:layout_height="wrap_content"
-            android:layout_gravity="start"
-            android:backgroundTint="@color/white"
-            app:icon="@drawable/light_mode"
-            app:iconPadding="8dp"
-            app:iconTint="@color/black"
-            tools:ignore="SpeakableTextPresentCheck"
             android:background="@null"
-            app:stateListAnimator="@null"
+            android:backgroundTint="@color/white"
             android:outlineProvider="none"
-            app:elevation="0dp"
-            />
+            app:icon="@drawable/light_mode"
+            app:iconTint="@color/black"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
             android:backgroundTint="@color/white"
-            android:stateListAnimator="@null"
+            android:padding="@dimen/button_margin"
             android:text="@string/settings"
             android:textColor="@color/black"
-            android:textSize="26sp"
-            android:layout_gravity="center_vertical"
-            tools:ignore="RtlHardcoded" />
+            android:textSize="@dimen/size26"
+            tools:ignore="InefficientWeight,RtlHardcoded" />
 
     </LinearLayout>
 
@@ -48,22 +45,22 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_gravity="center"
-        android:layout_marginTop="16dp"
         >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/darkmode"
+            android:layout_marginStart="@dimen/button_margin"
             android:textColor="@color/black"
-            android:textSize="16sp" />
+            android:textSize="@dimen/size16"  />
 
         <Switch
             android:layout_width="wrap_content"
-            android:layout_height="0dp"
+            android:layout_height="@dimen/zero"
             android:layout_gravity="end"
             android:backgroundTint="@color/black"
-            android:minWidth="48dp"
+            android:minWidth="@dimen/button_width"
             tools:ignore="TouchTargetSizeCheck" />
     </FrameLayout>
 
@@ -74,26 +71,27 @@
         android:gravity="center_vertical">
 
         <TextView
-            android:layout_width="0dp"
+            android:layout_width="@dimen/zero"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/button_margin"
             android:layout_weight="1"
             android:text="@string/share"
-            android:textSize="16sp"
-            android:textColor="@color/black"/>
+            android:textSize="@dimen/size16"
+            android:textColor="@color/black"
+            tools:ignore="InefficientWeight" />
 
         <Button
-            android:layout_width="48dp"
+            android:layout_width="@dimen/button_width"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
-            app:cornerRadius="0dp"
+            app:cornerRadius="@dimen/zero"
             app:icon="@drawable/vector"
-            app:iconPadding="8dp"
+            app:iconPadding="@dimen/padding8"
             app:iconTint="@color/grey"
             android:layout_gravity="end"
             tools:ignore="SpeakableTextPresentCheck"
-            app:stateListAnimator="@null"
             android:outlineProvider="none"
-            app:elevation="0dp"/>
+            app:elevation="@dimen/zero"/>
     </LinearLayout>
 
     <LinearLayout
@@ -103,24 +101,25 @@
         android:gravity="center_vertical">
 
         <TextView
-            android:layout_width="0dp"
+            android:layout_width="@dimen/zero"
+            android:layout_marginStart="@dimen/button_margin"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/support"
             android:textColor="@color/black"
-            android:textSize="16sp" />
+            android:textSize="@dimen/size16"
+            tools:ignore="InefficientWeight" />
 
         <Button
-            android:layout_width="48dp"
+            android:layout_width="@dimen/button_width"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
             android:backgroundTint="@color/white"
             android:outlineProvider="none"
-            app:elevation="0dp"
+            app:elevation="@dimen/zero"
             app:icon="@drawable/support"
-            app:iconPadding="0dp"
+            app:iconPadding="@dimen/zero"
             app:iconTint="@color/grey"
-            app:stateListAnimator="@null"
             tools:ignore="SpeakableTextPresentCheck" />
     </LinearLayout>
 
@@ -132,24 +131,24 @@
         android:gravity="center_vertical">
 
         <TextView
-            android:layout_width="0dp"
+            android:layout_width="@dimen/zero"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/button_margin"
             android:layout_weight="1"
             android:text="@string/documentation"
             android:textColor="@color/black"
-            android:textSize="16sp" />
+            android:textSize="@dimen/size16" />
 
         <Button
-            android:layout_width="48dp"
+            android:layout_width="@dimen/button_width"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
             android:backgroundTint="@color/white"
             android:outlineProvider="none"
-            app:elevation="0dp"
+            app:elevation="@dimen/zero"
             app:icon="@drawable/arrow_forward"
-            app:iconPadding="0dp"
+            app:iconPadding="@dimen/zero"
             app:iconTint="@color/grey"
-            app:stateListAnimator="@null"
             tools:ignore="SpeakableTextPresentCheck" />
 
     </LinearLayout>
