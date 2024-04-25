@@ -9,7 +9,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.EditText
 
-class Poisk_Activity : AppCompatActivity() {
+class SearchActivity : AppCompatActivity() {
 
     private var text: String = ""
 
